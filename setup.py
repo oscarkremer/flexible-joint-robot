@@ -4,7 +4,7 @@ setup(
     name='src',
     packages=find_packages(),
     version='0.1.0',
-    description='Code for modelling, control and optimization of a single joint flexible arm-like robot',
+    description='Swarm Optimization for Flexible One DOF Robot',
     author='Oscar Schmitt Kremer',
     license='MIT',
 )

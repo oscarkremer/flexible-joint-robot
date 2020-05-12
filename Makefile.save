@@ -1,0 +1,128 @@
+#################################################################################
+# GLOBALS                                                                       #
+#################################################################################
+.DEFAULT_GOAL := check
+PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+BUCKET = [OPTIONAL] your-bucket-for-syncing-data (do not include 's3://')
+PROFILE = default
+EPOCHS = 1
+PROJECT_NAME = cerberus-garten
+PYTHON_INTERPRETER = python3
+
+################################################################################
+# COMMANDS                                                                     #
+# TO SHOW OUTPUT USE LOGGER=stdout                                             #
+################################################################################
+
+webserver-uwsgi:
+	@echo "---> Starting uwsgi server"
+	@uwsgi --ini cerberus_uwsgi.ini
+
+service-install:
+	@echo "--> Instalando serviço cerberus.service"
+	@sudo cp cerberus.service /etc/systemd/system/
+	@sudo systemctl daemon-reload
+	
+service-start: service-install
+	@echo "Iniciando serviço"
+	@sudo systemctl start cerberus
+	
+service-stop:
+	@echo "Parando serviço"
+	@sudo systemctl stop cerberus
+	
+webserver2:
+	@echo "---> Starting server"
+	@gunicorn app:app -b 0.0.0.0:8000 --timeout=60
+
+dirs:
+	@echo "---> Creating data dirs"
+	@mkdir -p data/client
+	@mkdir -p data/images/evaluation
+	@mkdir -p data/knowledge/network_1
+	@mkdir -p data/knowledge/network_2
+	@mkdir -p data/knowledge/regressor
+	@mkdir -p data/processed
+	@mkdir -p data/test
+	@mkdir -p data/logs
+	@echo "---> Done"
+
+sort:
+	@echo "---> Starting sorting"
+	@$(PYTHON_INTERPRETER) src/api/sort.py
+
+move:
+	@echo "---> Starting moving"
+	@$(PYTHON_INTERPRETER) src/api/move.py
+
+
+evaluate:
+	@echo "---> Starting evaluation"
+	@$(PYTHON_INTERPRETER) src/api/evaluate.py
+
+
+setup: check_environment
+	@echo "---> Running setup.."
+	@conda env create -f environment.yml
+	@cp -n .env.example .env
+	@echo "---> To complete setup please run \n---> source activate cerberus"
+
+install:
+	@echo "---> Installing dependencies"
+	@conda env update -f environment.yml
+
+images:
+	@echo "---> Create more images for future training"
+	@echo "---> Expected to have all images in the right path for creation"
+	@echo "---> The dataset is necessary for training and testing"
+	@$(PYTHON_INTERPRETER) src/api/normalize.py
+	@echo "---> Accomplished, verification needed to ensure low cross entropy"
+
+imag_proc:
+	@echo "---> Image Segmentation"
+	@$(PYTHON_INTERPRETER) src/api/image_process.py
+
+rename:
+	@echo "---> Renaming"
+	@$(PYTHON_INTERPRETER) src/api/rename.py
+
+clean:
+	find . -type f -name "*.py[co]" -delete
+	find . -type d -name "__pycache__" -delete
+
+train:
+	@echo "---> Load and prepare files, for training and testing"
+	@echo "---> This may take a few minutes, depending on the number of epochs"
+	@$(PYTHON_INTERPRETER) src/api/train.py --epochs $(EPOCHS)
+
+fast_train:
+	@echo "---> Create more images for future training"
+	@echo "---> Expected to have all images in the right path for creation"
+	@echo "---> The dataset is necessary for training and testing"
+	@$(PYTHON_INTERPRETER) src/api/images.py --epochs $(EPOCHS)
+	@echo "--------------------------- WARNING ---------------------------"
+	@echo "---> Starting the training without previous filtering"
+	@$(PYTHON_INTERPRETER) src/api/train.py --epochs $(EPOCHS)
+	@echo "---> Load and prepare files, for training and testing"
+	@echo "---> This may take a few minutes, depending on the number of epochs"
+
+validate:
+	@echo "---> Start validation of convolutional networks"
+	@$(PYTHON_INTERPRETER) src/api/validate.py 
+
+lint:
+	flake8 src
+
+predict:
+	@$(PYTHON_INTERPRETER) src/api/predict.py
+
+check_environment:
+	@echo "---> Checking environment.."
+	$(PYTHON_INTERPRETER) test_environment.py
+
+autocorrect:
+		@echo "---> Processing autocorrect"
+		@autopep8 --in-place --aggressive --aggressive --global-config .flake8 $(shell find . -name '*.py')
+
+console:
+		@$(PYTHON_INTERPRETER)
