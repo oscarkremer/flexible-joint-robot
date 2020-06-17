@@ -18,7 +18,7 @@ def closed_loop(t, x):
     lambda2 = 10
     Kd1 = 100
     Kd2 = 100
-    gamma1=10
+    gamma1=20
     xd = 1 + np.sin(2*t+np.pi/2)*np.cos(3*t)
     xdponto = -2*np.sin(2*t)*np.cos(3*t)-3*np.sin(3*t)*np.cos(2*t);
     xd2ponto = 12*np.sin(2*t)*np.sin(3*t)-13*np.cos(2*t)*np.cos(3*t);
@@ -52,10 +52,19 @@ def closed_loop(t, x):
     v0 = x3d2ponto - lambda2*e3ponto
     u = Jm*v0 + K*(x3-x1) - Kd2*z3
     dx1dt=x2; 
+
+    print(dx1dt)
     dx2dt=f1+ni3*x3
-    dx3dt=x4;
-    dx4dt=f2+ni5*u;
-    dx5dt = -gamma1*xr12ponto*z1;
+    print(dx2dt)
+
+    dx3dt=x4
+    print(dx3dt)
+
+    dx4dt=f2+ni5*u
+    print(dx4dt)
+
+    dx5dt = -gamma1*xr12ponto*z1
+    print(dx5dt)
     return [dx1dt,dx2dt,dx3dt,dx4dt, dx5dt]
 
 def solve_equation(x0, t, delta_t):
@@ -64,6 +73,7 @@ def solve_equation(x0, t, delta_t):
     for i in range(t.size):
         dxdt = closed_loop(t[i], x)
         x = x + delta_t*np.array([dxdt[0], dxdt[1], dxdt[2], dxdt[3], dxdt[4]])
+        print(x)
         x1.append(x[0])
         x2.append(x[1])
         x3.append(x[2])
@@ -74,8 +84,8 @@ def solve_equation(x0, t, delta_t):
 if __name__=='__main__':
     x0 = np.array([0,0,0,0,0])
     t0 = 0
-    tf = 2
-    delta_t = 1/500
+    tf = 0.2
+    delta_t = 1
     t = np.arange(t0, tf, delta_t)
     x1, x2, x3, x4, x5 = solve_equation(x0, t, delta_t)
     plt.plot(t, x1)
