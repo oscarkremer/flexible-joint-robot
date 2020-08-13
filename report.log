@@ -1,0 +1,87 @@
+2020-08-07 20:30:18,692 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:31:54,128 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:32:15,421 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:34:42,364 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:35:03,861 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:35:21,043 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:35:42,738 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:35:57,402 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:36:30,261 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:37:08,597 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:37:34,633 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 20:59:21,846 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 21:00:26,116 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2020-08-07 21:01:59,787 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-07 21:09:54,113 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-07 21:10:15,901 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-07 21:21:24,095 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 1.5, 'c2': 1.5, 'w': 0.9}
+2020-08-07 21:25:52,503 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 1.5, 'c2': 1.5, 'w': 0.3}
+2020-08-07 21:36:03,847 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.5, 'w': 0.3}
+2020-08-07 21:36:30,220 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.3}
+2020-08-07 21:36:51,742 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.3}
+2020-08-07 21:38:22,023 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 2, 'c2': 3, 'w': 0.3}
+2020-08-07 21:39:17,315 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 4, 'c2': 5, 'w': 0.3}
+2020-08-07 21:42:28,593 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 4, 'c2': 5, 'w': 0.9}
+2020-08-07 21:43:17,390 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 2, 'c2': 3, 'w': 0.9}
+2020-08-07 21:46:50,073 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 1.5, 'c2': 2, 'w': 0.9}
+2020-08-07 21:52:24,425 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.9, 'c2': 1, 'w': 0.9}
+2020-08-07 22:16:21,949 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 2, 'c2': 3, 'w': 0.9}
+2020-08-07 22:18:47,061 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 2, 'c2': 3, 'w': 0.9}
+2020-08-07 23:26:25,775 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 133.72741746441653, best pos: [2.50591652 1.63761648 1.74581615 2.43238149 2.97933061 3.04365817
+ 1.2528347  2.03224129]
+2020-08-08 18:58:40,772 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 18:59:17,432 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (8,)
+Traceback (most recent call last):
+  File "/home/oscar/.local/lib/python3.6/site-packages/pyswarms/backend/generators.py", line 82, in generate_swarm
+    low=min_bounds, high=max_bounds, size=(n_particles, dimensions)
+  File "mtrand.pyx", line 1121, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 541, in numpy.random._common.cont
+  File "_common.pyx", line 458, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 749, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+2020-08-08 18:59:20,713 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (8,)
+Traceback (most recent call last):
+  File "/home/oscar/.local/lib/python3.6/site-packages/pyswarms/backend/generators.py", line 82, in generate_swarm
+    low=min_bounds, high=max_bounds, size=(n_particles, dimensions)
+  File "mtrand.pyx", line 1121, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 541, in numpy.random._common.cont
+  File "_common.pyx", line 458, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 749, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+2020-08-08 19:00:09,576 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 19:00:43,697 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 19:01:11,449 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 19:02:06,937 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (8,)
+Traceback (most recent call last):
+  File "/home/oscar/.local/lib/python3.6/site-packages/pyswarms/backend/generators.py", line 82, in generate_swarm
+    low=min_bounds, high=max_bounds, size=(n_particles, dimensions)
+  File "mtrand.pyx", line 1121, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 541, in numpy.random._common.cont
+  File "_common.pyx", line 458, in numpy.random._common.cont_broadcast_2
+  File "__init__.pxd", line 749, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape
+2020-08-08 19:04:05,069 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 19:04:55,646 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 19:05:29,364 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1, 'c2': 2, 'w': 0.9}
+2020-08-08 19:12:38,476 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 65.09132069785308, best pos: [1.90282890e+00 6.00834364e-01 8.56586009e+00 3.81765218e+01
+ 2.32278457e-02 7.21391239e+00 2.66211263e-01 3.59803333e+03]
+2020-08-08 19:40:22,695 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 0.5, 'c2': 0.75, 'w': 0.9}
+2020-08-08 19:49:14,809 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 85.28266554188794, best pos: [2.77395286e+00 9.87041332e-01 1.01608558e+00 7.57506917e+00
+ 8.74010200e-02 3.72051434e+00 1.02146036e-01 1.02716132e+05]
+2020-08-08 19:49:16,468 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:49:26,347 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:49:35,787 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:50:16,914 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:52:08,028 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:57:26,336 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:59:03,732 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:59:29,403 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 19:59:38,317 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 20:00:36,991 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 1, 'w': 0.9}
+2020-08-08 20:01:38,780 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-08 20:03:04,148 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-08 20:03:20,105 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-08 20:05:28,490 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-08 20:09:38,963 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-08 20:10:08,333 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
+2020-08-08 21:13:36,081 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.8, 'w': 0.9}
