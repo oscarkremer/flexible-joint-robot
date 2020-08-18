@@ -94,10 +94,10 @@ def solve_equation(x, t, delta_t, robot, gains, adapt_gains):
     return np.array(x_plot)
 
 def itae(gains):
-    Khat = 35
-    Ihat = 30
-    Jmhat = 0.03
-    Mglhat = 1.0
+    Khat = 45
+    Ihat = 45
+    Jmhat = 0.06
+    Mglhat = 1.2
     t0 = 0
     tf = 10
     delta_t = 1/1000
@@ -115,7 +115,7 @@ def itae(gains):
         return metric
 
 if __name__=='__main__':    
-    bounds = [(0.1, 20), (0.1, 20), (0.1, 20), (0.1, 200), (0.02, 0.5), (0.2, 20), (0.001, 1), (1000, 200000)]
+    bounds = [(0.1, 20), (0.1, 20), (0.1, 20), (0.1, 200), (0.001, 10), (0.001, 20), (0.001, 10), (0.001, 200000)]
     result = differential_evolution(itae, bounds, maxiter=100, popsize=10, disp=True)
     print(result.x)
     print(result.fun)

@@ -80,10 +80,10 @@ def solve_equation(x, t, delta_t, robot, robot_hat, gains):
     return np.array(x_plot)
 
 def itae(gains):
-    Khat = 31
-    Ihat = 310
-    Jmhat = 0.04
-    Mglhat = 0.8
+    Khat = 45
+    Ihat = 45
+    Jmhat = 0.06
+    Mglhat = 1.2
     t0 = 0
     tf = 10
     delta_t = 1/1000
@@ -108,4 +108,5 @@ if __name__=='__main__':
     print(result.fun)
 
 #[20.         20.         20.         24.15402461] - com erro - itae 778.9458416330021
+#[ 20.          20.          20.         108.69215305] - sem erro - itae -14.745204873209527
 

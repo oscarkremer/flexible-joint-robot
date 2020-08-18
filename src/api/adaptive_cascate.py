@@ -106,10 +106,10 @@ def plot(t, y1, y2, title, x_label, y_label, legends, axis_lim=False):
     plt.show()
 
 if __name__=='__main__':    
-    Khat = 35
-    Ihat = 30
-    Jmhat = 0.03
-    Mglhat = 1.0
+    Khat = 45
+    Ihat = 45
+    Jmhat = 0.06
+    Mglhat = 1.2
     t0 = 0
     tf = 10
     delta_t = 1/1000
